@@ -1,30 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #0077cc;
-        }
-        a {
-            color: #0077cc;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffd6e8, #c4f0f2);
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #555;
+    }
+    .container {
+      background: #fff9f9;
+      max-width: 460px;
+      width: 90%;
+      padding: 35px 45px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(255, 182, 193, 0.3);
+      text-align: center;
+      border: 1px solid #f5c6ce;
+    }
+    h1 {
+      color: #de5d83; /* dusty rose */
+      margin-bottom: 18px;
+      font-weight: 700;
+      font-size: 2.4rem;
+    }
+    p {
+      font-size: 1.15rem;
+      margin: 16px 0;
+      line-height: 1.6;
+      color: #6b5b65; /* muted purple */
+    }
+    .nav-links {
+      margin-top: 30px;
+    }
+    .nav-links a {
+      margin: 0 14px;
+      font-weight: 600;
+      color: #a895c1; /* pastel purple */
+      text-decoration: none;
+      padding: 10px 22px;
+      border: 2px solid #a895c1;
+      border-radius: 12px;
+      transition: background-color 0.35s ease, color 0.35s ease;
+      box-shadow: 0 4px 6px rgba(168, 149, 193, 0.25);
+    }
+    .nav-links a:hover {
+      background-color: #a895c1;
+      color: #fff9f9;
+      box-shadow: 0 6px 10px rgba(168, 149, 193, 0.45);
+    }
+    a.visit-github {
+      display: inline-block;
+      margin-top: 25px;
+      font-weight: 700;
+      color: #f48fb1; /* pastel pink */
+      background-color: #fbe8ee;
+      padding: 14px 30px;
+      border-radius: 14px;
+      text-decoration: none;
+      border: 2px solid #f48fb1;
+      transition: background-color 0.35s ease, color 0.35s ease;
+      box-shadow: 0 5px 12px rgba(244, 143, 177, 0.3);
+    }
+    a.visit-github:hover {
+      background-color: #f48fb1;
+      color: #fff9f9;
+      box-shadow: 0 8px 18px rgba(244, 143, 177, 0.5);
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My First Website!</h1>
-    <p>This is a simple website made with HTML.</p>
-    <p>I’m learning how to build websites and use GitHub!</p>
-    <p>Check out my <a href="https://github.com">GitHub</a> profile.</p>
+  <div class="container">
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple, clean, and artsy pastel-themed webpage.</p>
+    <p>Feel free to explore and customize it however you like!</p>
+
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="visit-github">Visit GitHub</a>
+  </div>
 </body>
 </html>
